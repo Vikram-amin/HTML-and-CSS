@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: black;
+            height: 100vh;
+            margin: -8px;
+        }
+        #parent{
+            max-width: 70%;
+            height: 550px;
+            background-color: white;
+            margin: auto;
+            border: 2px solid red;
+            display: flex;
+           
+        }
+        .left{
+             border: 2px solid red;
+            max-width: 50%;
+            max-height: 550px;
+             border: 2px  solid white;
+             position: relative;
+        }
+        .right{
+            max-width: 50%;
+             border: 2px solid red;
+            
+        }
+
+     
+
+        .img{
+             position: absolute;
+             top: 10px;
+             left: 2%; 
+             width: 95%; 
+             height: 200px;
+             background-image: url('https://th.thgim.com/news/national/fwrz7q/article30897008.ece/ALTERNATES/FREE_660/TH24Trump-visit1');
+             background-position: 0 0; 
+             background-repeat:no-repeat; 
+             background-size: cover;
+
+
+        }
+
+  
+        .img1{
+             position: absolute;
+             top: 85%;
+             left: 2%; 
+             width: 30%; 
+             height: 130px;
+             background-image: url('https://th.thgim.com/news/national/pk9een/article30897042.ece/ALTERNATES/FREE_660/TH24GUJSTADIUM');
+             background-position: 0 0; 
+             background-repeat:no-repeat; 
+             background-size: cover;
+             background-color: white;
+
+        }
+         
+        h2,h6,h4{
+            margin: -5px;
+            padding: 0px 20px;
+            color: white;
+            font-family: 'Times New Roman';
+            font-weight: 400;
+            
+        }
+        .left > div{
+             max-width: 95%;
+              margin-left: 10px;
+             background-color: #08345B !important;
+             margin-top: 210px;
+
+
+        }
+        h4{
+            color: gray;
+        }
+        h6{
+            font-weight: 400;
+            font-size: 11px;
+        }
+
+   
+        .p1, .p2{
+         margin: 0;
+         padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 140px;
+        background-color: white;
+        }
+        .p1{
+            color:#214271;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 12px;
+       
+        }
+        .p2{
+            color: #181d25;
+            margin-top: -13px;
+            font-weight: 600;
+
+        }
+        .right > div{
+            display: flex;
+           justify-content: left;
+        }
+        
+        .p3, .p4{
+         margin: 0;
+         padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+     
+        background-color: white;
+        }
+        .p3{
+            color:#214271;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            margin-left: 10px;
+
+            display: block;
+       
+        }
+        .p4{
+            color: #181d25;
+            font-weight: 600;
+
+        }
+
+        .left-bottom{
+            border: 2px solid black;
+            position: relative;
+            margin-top: -100px;
+        }
+  
+
+
+    </style>
+</head>
+<body>
+    <div id="container"> <br> <br>
+        <div id="parent">
+            <div class="left"> 
+                <span class="img"></span> 
+          
+               <div><br> <h2>Ahmedabad joint rally with Trump will be historic, says Modi</h2>
+                <br>
+                <h6>KALLOL BHATTACHEREJEE</h6> <br>
+                <h6>SUMASINI HAIDAR</h6> <br>
+                <h4>U.S.President to visit Sabarmathi Ashram ahead of 'Namaste Trump' event</h4>
+                 <br>    
+             </div>
+             <div class="left-bottom">
+                <span class="img1">  </span>
+                <p class="p1">NATIONAL</p> <br>
+                <p class="p2">Ahmedabad glitters to welcome Donald Trump</p>
+                </div>
+            </div>
+           
+
+            <div class="right">
+                <!-- <div>
+                   // <img src="data:image/jpeg;base64,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" alt="">
+                     <p class="p3">NATIONAL</p> <br> 
+                     <p class="p4">Ahmedabad glitters to welcome Donald Trump</p>
+                </div> -->
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

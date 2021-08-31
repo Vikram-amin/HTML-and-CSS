@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            max-width: 95%;
+            max-height: 100vh;
+            margin: auto;
+            display: grid;
+            grid-gap: 20px;
+
+        }
+        h2{
+            color: gray;
+            padding: 10px;
+            margin-top: 0px;
+        }
+        h1{
+           margin-top: -10px;
+           padding: 10px;
+            font-size: 50px;
+            font-weight: 100;
+            
+        }
+         .yellow{
+            grid-area: a;
+            background-color:yellow;  
+         }
+              
+        .red{
+            grid-area: b;
+            background-color: red;   
+        }
+         .green1{
+            grid-area: c;
+            background-color :#00FF2A;
+        }
+        .green2{
+            grid-area: d;
+            background-color :#00FF2A;
+
+        }
+        .green3{
+            grid-area: e;
+            background-color :#00FF2A;
+
+        }
+
+        @media screen and (max-width:600px){
+            #parent{
+                max-width: 80%;
+                grid-template: "a"
+                                "b"
+                                "c"
+                                "d"
+                                "e";
+            }
+
+        .yellow{
+           height: 10vh; 
+         }
+              
+        .red{
+          height: 30vh;   
+        }
+         .green1{
+           height: 20vh; 
+           margin-top: -5px;
+        }
+        .green2{
+          height: 20vh; 
+           margin-top: -5px;
+
+        }
+        .green3{
+           height: 20vh; 
+            margin-top: -5px;
+
+        }
+        }
+        h1{
+            font-size: 25px;
+            margin-top: 8px;
+        }
+
+        
+        @media screen and (min-width:600px){
+            #parent{
+                margin-top: 10%;
+                grid-template: "a a a"
+                                "b b b"
+                                "c d e";
+                               
+            }
+
+        .yellow{
+           height: 10vh; 
+         }
+              
+        .red{
+          height: 30vh;   
+        }
+         .green1{
+           height: 20vh; 
+        }
+        .green2{
+          height: 20vh; 
+
+        }
+        .green3{
+           height: 20vh; 
+
+        }
+        }
+
+        
+        @media screen and (min-width:992px){
+            #parent{
+              margin-top: 0%;
+                grid-template: "a a a a a"
+                                "b b b b c"
+                                "b b b b d"
+                                "b b b b e";
+                            
+            }
+
+        .yellow{
+           height: 10vh; 
+         }
+              
+        .red{
+          height: 82vh;   
+      
+        }
+         .green1{
+           height: 25vh; 
+           margin-left: 30px;
+           
+        }
+        .green2{
+          height: 25vh;
+          margin-left: 30px;
+       
+
+        }
+        .green3{
+           height: 25vh; 
+        margin-left: 30px;
+           
+
+        }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+        <div id="parent">
+        <div class="yellow"><h1>Navigation</h1></div>
+        <div class="red"><h2>LEFT BOX </h2></div>
+        <div class="green1"><h2>RIGHT BOX1</h2></div>
+        <div class="green2"><h2>RIGHT BOX2</h2></div>
+        <div class="green3"><h2>RIGHT BOX3</h2></div>
+    </div>
+    
+</body>
+</html>

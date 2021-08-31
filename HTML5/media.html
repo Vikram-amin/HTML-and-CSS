@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+
+
+   #template{
+            display: grid;
+            font-size: 40px;
+            max-width: 90%;
+            margin: auto;
+            gap: 20px;  
+    }
+
+    #top{
+        background-color: yellow;
+        height: 100px;
+        grid-area: a;
+    }
+
+    #left{
+        background-color :#00FF2A;
+        height: 400px;
+        grid-area: b;
+    }
+
+    #right{
+        background-color: red;
+        height: 400px;
+        grid-area: c;
+    }
+
+
+
+ @media screen and (max-width:600px) {
+        #template{
+            grid-template: 'a'
+                           'b'
+                           'c';
+        }
+        
+    } 
+
+        @media screen and (min-width:600px) {
+        #template{
+               grid-template:"a a "
+                             "b c" ;
+        }
+        
+    }
+
+    
+         @media screen and (min-width:992px) {
+        #template{
+            grid-template:"a a "
+                          "c b" ;
+        }
+        
+    } 
+    </style>
+</head>
+<body>
+    <div id="template">
+        <div id="top"> TOP </div>
+        <div id="left">LEFT</div>
+        <div id="right">RIGHT</div>
+    </div>
+    
+</body>
+</html>

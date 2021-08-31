@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+     #parent{
+           
+             max-width: 96%;
+             margin: auto;
+             display: grid;
+             grid-gap:30px;
+             min-height: 400px;
+           
+   
+        
+                            
+
+     }
+        
+              
+
+        h2{
+            color: gray;
+            padding: 10px;
+            margin-top: 0px;
+        }
+        h1{
+           margin-top: -5px;
+           padding: 10px;
+            font-size: 50px;
+            
+        }
+
+      @media screen and (max-width:600px) {
+        #parent{
+            grid-template: "a"
+                           "b"
+                           "c"
+                           "d"
+                           "e"
+                           ;
+        }
+             .yellow{
+            grid-area: a;
+            background-color:yellow;
+            height: 80px;
+            
+            
+         }
+              
+        .red{
+            grid-area: b;
+            background-color: red;
+            height: 100px;
+              
+        }
+         .green{
+            grid-area: c;
+            background-color :#00FF2A;
+            height: 100px;
+        }
+
+         .blue{
+            grid-area: d;
+            background-color: blue;
+             height:100px;
+         }
+         .gray{
+            grid-area: e;
+            background-color: rgb(179, 174, 174);
+           height: 100px;
+        }
+        
+    } 
+
+    
+        @media screen and (min-width:600px) {
+        #parent{
+             padding-top: 10px;
+               grid-template:"a a"
+                             "b c"
+                             "d e" ;
+          
+        }
+              .yellow{
+            grid-area: a;
+            background-color:yellow;
+            height: 80px;
+         
+         }
+              
+        .red{
+            grid-area: b;
+            background-color: red;
+            height: 220px;
+              
+        }
+         .green{
+            grid-area: c;
+            background-color :#00FF2A;
+            height: 220px;
+        }
+
+         .blue{
+            grid-area: d;
+            background-color: blue;
+             height: 220px;
+         }
+         .gray{
+            grid-area: e;
+            background-color: rgb(179, 174, 174);
+           height: 220px;
+        }
+        
+    }
+
+    
+         @media screen and (min-width:992px) {
+         #parent{
+              padding-top: 80px;
+            grid-template:"a a a a"
+                          "b c d e" ;
+        }
+
+         .yellow{
+            grid-area: a;
+            background-color:yellow;
+            height: 80px;
+            margin-bottom: -20px;
+         }
+              
+        .red{
+            grid-area: b;
+            background-color: red;
+            height: 260px;
+              
+        }
+         .green{
+            grid-area: c;
+            background-color :#00FF2A;
+            height: 260px;
+        }
+
+         .blue{
+            grid-area: d;
+            background-color: blue;
+             height: 260px;
+         }
+         .gray{
+            grid-area: e;
+            background-color: rgb(179, 174, 174);
+           height: 260px;
+        }
+        
+    }
+
+
+ </style>
+</head>
+<body>
+
+    <div id="parent">
+        <div class="yellow"><h1>Navigation</h1></div>
+        <div class="red"><h2>Box 1</h2></div>
+        <div class="green"><h2>Box 2 </h2></div>
+        <div class="blue"><h2>Box 3</h2></div>
+        <div class="gray"><h2>Box 4</h2></div>
+    </div>
+    
+</body>
+</html>

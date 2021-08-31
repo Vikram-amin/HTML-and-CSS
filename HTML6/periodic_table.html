@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+#parent{
+    max-width: 70%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    margin-top: 150px;
+    grid-template-columns: repeat(18, 40px);
+    grid-template-rows: repeat(7, 40px) ;
+    position: relative;
+     
+}
+
+#parent > div{
+    border: 2px solid black;
+    text-align: center;
+    padding-top:5px ;
+        
+}
+#parent > div:nth-child(1){
+   color: cornsilk;
+   font-weight: 700;
+   background-color: #A80000;
+}
+#parent > div:nth-child(2){
+    grid-column-start: 18;
+}
+#parent > div:nth-child(3),#parent > div:nth-child(11),#parent > div:nth-child(19),#parent > div:nth-child(37),#parent > div:nth-child(55),#parent > div:nth-child(73){
+     background-color: #89A02C;
+}
+#parent > div:nth-child(4),#parent > div:nth-child(12),#parent > div:nth-child(20),#parent > div:nth-child(38),#parent > div:nth-child(56),#parent > div:nth-child(74){
+     background-color: #FF5555;
+}
+#parent > div:nth-child(57),#parent > div:nth-child(75){
+   border: 4px solid black;
+  
+}
+
+ .blue{  
+    background-color: #0000FE;
+}
+.pink{
+    background-color:#AA0087 ;
+}
+.gray{
+     background-color:#6D535E ;
+}
+.orange{
+    background-color:#FF6600 ;
+}
+.yellow{
+    background-color:#FFCC00 ; 
+}
+.light{
+    background-color:#FF0066 ; 
+}
+.green{
+    background-color:#5AA02C ; 
+}
+
+#parent > div:nth-child(5){
+    grid-column-start: 13;
+}
+#parent > div:nth-child(13){
+    grid-column-start: 13;
+}
+#parent > div:nth-child(21){
+    visibility: hidden;
+}
+#parent > div:nth-child(39){
+    visibility: hidden;
+}
+
+#silicon{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    left: 15%;
+    top: 6%;
+    background-color: #89A02C;
+}
+#silicon p:nth-child(1){
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: -20px;
+    padding-left: 10px;
+}
+#silicon p:nth-child(2){
+    font-size: 16px;
+    text-align: left;
+     padding-left: 10px;
+   
+   
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -100px;
+   font-family: sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+}
+
+#bottom{
+    display: grid;
+    grid-template-columns: repeat(14, 30px);
+    grid-template-rows: repeat(14, 30px);
+      margin-top: 50px;
+      margin-left: 30%;
+    
+}
+#bottom> div{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 5px;
+
+  
+}
+.dc{
+    background: #47582E;
+}
+.lc{
+    background: #95BC5F;
+}
+span{
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+         <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+    <div id="parent">
+   
+        <div>H</div>
+         <div class="yellow">2</div>
+          <div>3</div>
+           <div>4</div>
+            <div class="pink">5</div>
+             <div class="green">6</div>
+              <div class="green">7</div>
+               <div class="green">8</div>
+                <div class="light">9</div>
+                 <div class="yellow">10</div>
+        <div>11</div>
+         <div>12</div>
+          <div class="orange">13</div>
+           <div class="pink">14</div>
+            <div class="green">15</div>
+             <div class="green">16</div>
+              <div class="light">17</div>
+               <div class="yellow">18</div>
+                <div>19</div>
+                 <div>20</div>
+       <div >21</div>
+         <div class="blue">22</div>
+          <div class="blue"> 23</div>
+           <div class="blue">24</div>
+            <div class="blue">25</div>
+             <div class="blue">26</div>
+              <div class="blue"> 27</div>
+               <div class="blue">28</div>
+                <div class="blue">29</div>
+                 <div class="blue">30</div>
+       <div class="orange">31</div>
+         <div class="pink">32</div>
+          <div class="pink">33</div>
+           <div class="green">34</div>
+            <div class="light">35</div>
+             <div class="yellow">36</div>
+              <div>37</div>
+               <div>38</div>
+                <div>39</div>
+                 <div class="blue">40</div>
+
+           <div class="blue">41</div>
+         <div class="blue">42</div>
+          <div class="blue">43</div>
+           <div class="blue">44</div>
+            <div class="blue">45</div>
+             <div class="blue">46</div>
+              <div class="blue">47</div>
+               <div class="blue">48</div>
+                <div class="orange">49</div>
+                 <div class="orange">50</div>
+       <div class="pink">51</div>
+         <div class="pink">52</div>
+          <div class="light">53</div>
+           <div class="yellow">54</div>
+            <div>55</div>
+             <div>56</div>
+              <div></div>
+               <div class="blue">58</div>
+                <div class="blue">59</div>
+                 <div class="blue">60</div>
+        <div class="blue">61</div>
+         <div class="blue">62</div>
+          <div class="blue">63</div>
+           <div class="blue">64</div>
+            <div class="blue">65</div>
+             <div class="blue">66</div>
+              <div class="orange">67</div>
+               <div class="orange">68</div>
+                <div class="orange">69</div>
+                 <div class="pink">70</div>
+
+           <div class="light">71</div>
+         <div class="yellow">72</div>
+          <div>73</div>
+           <div>74</div>
+            <div></div>
+             <div class="blue">76</div>
+              <div class="blue">77</div>
+               <div class="blue">78</div>
+                <div class="blue">79</div>
+                 <div class="blue">80</div>
+
+           <div class="blue">81</div>
+         <div class="blue">82</div>
+          <div class="blue">83</div>
+           <div class="blue">84</div>
+            <div class="gray">85</div>
+             <div class="gray">86</div>
+              <div class="gray">87</div>
+               <div class="gray"> 88</div>
+                 <div class="gray">89</div>
+                 <div class="gray">90</div> 
+    
+      <div id="silicon"><p> Si </p> 
+         <p>  Silicon </p></div>
+                 
+          
+    </div>
+
+    <div id="bottom">
+        <div class="dc"> <span>La</span> </div>
+        <div class="dc"></div>
+        <div class="dc"></div>
+        <div class="dc"></div>
+        <div class="dc"></div>
+        <div class="dc"></div>
+        <div class="dc"></div>
+        <div class="dc"></div>
+        <div class="dc"></div>
+       <div class="dc"></div>
+        <div class="dc"></div>
+         <div class="dc"></div>
+       <div class="dc"></div>
+        <div class="dc"></div>
+        <div class="lc"></div>
+        <div class="lc"></div>
+        <div class="lc"></div>
+        <div class="lc"></div>
+        <div class="lc"></div>
+        <div class="lc"></div>
+        <div class="lc">Am</div>
+        <div class="lc"></div>
+        <div class="lc"></div>
+       <div class="lc"> </div>
+        <div class="lc"></div>
+         <div class="lc"></div>
+       <div class="lc"></div>
+        <div class="lc">No</div>
+    </div>
+    
+</body>
+</html>

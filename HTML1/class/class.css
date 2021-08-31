@@ -1,0 +1,109 @@
+                              
+/* top */
+.bg-dark {
+  background-color: black;
+  color: white;
+  padding: 20px 10px;
+}
+
+.bg-red {
+  background-color: red;
+  padding: 20px 10px;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.bg-dark > div {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.bg-dark > div > div {
+  width: 33%;
+  float: left;
+}
+
+.bg-dark img {
+  max-width: 50px;
+}
+
+.clear {
+  clear:both;
+}
+
+
+
+
+
+
+.bg-red > h1 {
+  color:white;
+}
+
+.bg-red > div {
+  max-width: 800px;
+  margin: auto;
+}
+
+.bg-red > div > div {
+  background: white;
+  width: 42%;
+  float: left;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.bg-red > div h1, .bg-red > div h4 {
+  margin: 0;
+}
+
+.bg-red > div h1 {
+  margin-bottom: 6px;
+}
+
+.bg-red img {
+  float:left;
+}
+
+.bg-red img + div {
+  float:left;
+}
+
+.bg-red img + div + div {
+  clear: both;
+}
+
+.bg-red img + div span {
+  background: black;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.bg-red img + div span + span {
+  color: black;
+  background: white;
+}
+
+.bg-red img + div + div > div {
+  float: left;
+}
+
+.bg-red img + div + div > div span {
+  color: red;
+  font-size: 24px;
+}
+
+.bg-red img + div + div > button {
+  float: right;
+  background: red;
+  border: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+}

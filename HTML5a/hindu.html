@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          #container{
+           width: 100%;
+           height: 100vh;
+           margin: auto;  
+        }
+        #parent{
+            max-width: 75%;
+            margin: auto;
+            margin-top: 2%;
+            display: grid;
+            gap: 20px;
+            
+
+   
+        }
+
+     
+
+        .left{
+            max-width: 100%;
+            height: 86vh;
+            margin: 1%;
+           
+  
+        }
+        
+        .right{
+            width: 100%;
+            height: 86vh;
+            margin: 1%;
+        
+            
+        }
+        .left-top > img{
+            width: 100%;
+            height: 200px;
+
+        }
+        h2,h4,h6{
+            margin: 5px 10px;
+            padding: 2px,20px;
+            color: white;
+            font-weight: 400;
+            font-family: 'Times New Roman';
+        }
+
+        h4{
+            color: gray;
+        }
+        h6{
+            font-weight: 700;
+            font-size: 12px;
+        }
+        .left-top > div{
+            max-width: 100%;
+            margin: -10px 0px;  
+            
+            background-color: #08345B;
+            padding-bottom: 40px;
+            padding-top: 10px;
+
+        }
+        .left-bottom > img, .right > div >img{
+            height: 120px;
+           max-width: 120px;
+            margin: 20px 10px;
+
+        }
+        .left-bottom, .right>div {
+            display: flex;
+           
+        }
+
+        .p1{
+            color: #214271;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 5px;
+        }
+        .p2{
+            color: #181d25;
+                margin-top: -18px;
+                font-weight: 600;
+                padding: 5px;
+            
+        }
+        .right > div{
+            margin: -20px -10px;
+            padding: 0;
+        }
+
+        .left-top{
+            grid-area: a;
+        }
+
+        .left-bottom{
+            grid-area: b;
+        }
+
+        .right > div:nth-child(1){
+            grid-area: c;
+        }
+
+         .right > div:nth-child(2){
+              grid-area: d;
+         }
+
+          .right > div:nth-child(3){
+               grid-area: e;
+          }
+
+           .right > div:nth-child(4){
+                grid-area: f;
+           }
+
+            @media screen and (max-width:600px) {
+        #parent{
+            grid-template: "a"
+                           "b"
+                           "c"
+                           "d"
+                           "e"
+                           "f";
+                   
+        }
+ 
+    }
+
+    
+        @media screen and (min-width:600px) {
+            #parent{
+
+             flex-wrap: wrap;
+  
+        }
+         .left-bottom{
+            display: none;
+        }
+           .left-top{
+            width: 100%;
+           
+           
+        }
+        .right {
+            display: flex;
+            flex-wrap: wrap;
+         margin-top: -150px;
+              max-height: 320px;
+        }
+        
+        .right > div{
+          
+            max-width: 48%;
+            margin-left: 10px;
+          
+          
+        }
+        .right > div >img{
+            height: 100px;
+           max-width: 100px;
+            margin: 20px 10px;
+
+        }
+     
+    
+         .p1{
+            color: #214271;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 10px;
+            padding: 5px;
+        }
+        .p2{
+            color: #181d25;
+                margin-top: -18px;
+                font-weight: 300;
+                padding: 5px;
+                font-size: 12px;
+            
+        }
+    }
+
+    
+         @media screen and (min-width:992px) {
+                #parent{
+                     grid-template-columns: 50% 50%;
+                  
+                   
+                }
+          .left-bottom{
+           display: flex;
+        }
+      .left{
+            width: 100%;
+            height: 86vh;
+            margin: 1%;
+            margin-top: 30px;
+ 
+           
+            
+        }
+        
+        .right{
+            width: 100%;
+            height: 86vh;
+            margin: 1%;
+            
+
+             
+               
+            
+        }
+        .left-top > img{
+            width: 100%;
+            height: 200px;
+
+        }
+        h2,h4,h6{
+            margin: 5px 10px;
+            padding: 2px,20px;
+            color: white;
+            font-weight: 400;
+            font-family: 'Times New Roman';
+        }
+
+        h4{
+            color: gray;
+        }
+        h6{
+            font-weight: 700;
+            font-size: 12px;
+        }
+        .left-top > div{
+            max-width: 100%;
+            margin: -10px 0px;  
+            
+            background-color: #08345B;
+            padding-bottom: 40px;
+            padding-top: 10px;
+
+        }
+        .left-bottom > img, .right > div >img{
+            height: 120px;
+            width: 120px;
+            margin: 20px 10px;
+
+        }
+        .left-bottom, .right>div {
+            display: flex;
+           
+        }
+
+           .p1{
+            color: #214271;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 5px;
+        }
+        .p2{
+            color: #181d25;
+                margin-top: -18px;
+                font-weight: 600;
+                font-size: 16px;
+                padding: 5px;
+            
+        }
+        .right>div{
+            margin: -20px -10px;
+            padding: 0;
+        }
+               
+        .right > div{
+            margin-top: 2px;
+            max-width: 100%;
+            margin-left: 10px;
+        
+          
+          
+        }
+
+         }
+    </style>
+</head>
+<body>
+
+    
+    <div id="container" >
+        <div id="parent">
+            <div class="left">
+                <div class="left-top">
+                     <img src="https://th.thgim.com/news/national/fwrz7q/article30897008.ece/ALTERNATES/FREE_660/TH24Trump-visit1" />
+               
+                 <div>  <h2>Ahmedabad joint rally with Trump will be historic, says Modi</h2>   
+                <h6>KALLOL BHATTACHEREJEE</h6>
+                <h6>SUMASINI HAIDAR</h6> 
+                <h4>U.S.President to visit Sabarmathi Ashram ahead of 'Namaste Trump' event</h4>
+            </div>
+            </div>  
+
+            <div class="left-bottom">
+                <img  src="https://th.thgim.com/news/national/pk9een/article30897042.ece/ALTERNATES/FREE_660/TH24GUJSTADIUM" alt="">
+             <div>
+                 <p class="p1">NATIONAL</p> 
+                <p class="p2">Ahmedabad glitters to welcome Donald Trump</p>
+                </div>
+            </div>
+            </div>
+
+
+
+            <div class="right">
+                <div>
+                       <img  src="https://images.indianexpress.com/2018/10/ranil-wickremesinghe-1200.jpg" alt="">
+             <div>
+                 <p class="p1">THE HUDDLE</p> 
+                <p class="p2">The Huddle 2020 |Regional integratyion pegged to SAARC revival, says Rani Wickremesinghe</p>
+                </div>
+                </div>
+
+                  <div>
+                       <img  src="https://i.pinimg.com/736x/a3/64/f7/a364f72795be019ac01db41bc87ea971.jpg" alt="">
+             <div>
+                 <p class="p1">NATIONAL</p> 
+                <p class="p2">Over 10Lackh Kashmir students to don school uniforms after seven months</p>
+                </div>
+                </div>
+
+                  <div>
+                       <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4RBunQAU9svEXCFem0d22BIMcskV2J7y9Xslild7LRoKsptpH9qJ9jjmd6jXwThLDhuU&usqp=CAU" alt="">
+             <div>
+                 <p class="p1">NATIONAL</p> 
+                <p class="p2">Some restriction imposed on export of medical equipment to china,sas MEA</p>
+                </div>
+                </div>
+
+                  <div>
+                       <img  src="data:image/jpeg;base64,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" alt="">
+             <div>
+                 <p class="p1">THE HUDDLE</p> 
+                <p class="p2">Only a"microscopic minority" protesting against CAA:TejaswiSurya</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

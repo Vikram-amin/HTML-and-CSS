@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #row{
+            max-width: 80%;
+            display: grid;
+            margin: auto;
+            gap: 40px; 
+           
+             grid-template:"a a a"
+                             "b c c" ; 
+
+
+        }
+
+       .red{
+            background-color: #FF2B2A;
+            grid-area: a;
+            height: 60px;
+            border-radius: 5px;
+           
+       }
+
+       .green{
+            background-color: #56D400;
+            grid-area: b;
+            height: 490px;
+            border-radius: 5px;
+
+
+       }
+
+       .teal{
+           background-color: teal;
+            grid-area: c;
+            height: 490px;
+            border-radius: 5px;
+
+       }
+
+       
+    </style>
+
+</head>
+<body>
+    <div id="row">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="teal"></div>
+    </div>
+</body>
+</html>

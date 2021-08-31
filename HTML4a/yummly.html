@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: black;
+            margin: -19px -8px;
+          
+            
+           
+        }
+        .parent{
+            max-width:60% ;
+            background-color: white;
+            margin: auto;
+        }
+        h3{
+            text-align: center;
+            margin: 0;
+            margin-top: 20px;
+            padding: 10px;
+            color: grey;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .block{
+            display: flex;
+            max-width: 80%;
+            margin: auto;
+              
+
+            /* border: 2px solid black; */
+              
+        }
+
+          .block > div > div {
+            max-width: 95%;
+            display: flex;
+            justify-content: space-between;   
+             /* border: 2px solid red; */
+             text-align: left;
+       
+        }
+
+        .block > div{
+            text-align: center;
+          position: relative;
+        
+        }
+
+        .block > div > img{
+            max-width: 95%;
+           /* border: 2px solid red; */
+       
+          
+        }
+
+
+        .block p + img{
+            width: 35px;
+            height: 35px;
+                
+        }
+
+        .block p{
+            margin: 0;
+            font: 600;
+            color: gray;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        .block p:last-child{
+            color: red;
+            text-align: left;
+      
+            font-size: 10px;
+            color: #AFAEAE;
+       
+          
+        }
+      
+    </style>
+</head>
+<body>
+    
+
+    <div id="container">
+        <div class="parent">
+            <div class="top">
+                <h3>Weeknight Dinners</h3>
+                <div class="block">
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/6EKa7I3KmEqQe3Ek_s9mddSK96V_sdGqoIE4woxlqQ1yLFQ4Tnb5RkWYiW3BfOXp_Q6y3H-aA5CMlc_6edzu=s640-c-rw-v1-e365" alt="">
+
+                    <div>
+                        <p>Sheet Pan Honey Mustsatrd Pork Chops </p>
+                     <img src="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg" alt="">
+                    </div>
+                    <p>YUMMY</p>
+                    </div>
+
+
+
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/FAw510oLS7oOuFghLNhLFhm7fb1iqiqM8XiC0NIEMOAtJwH_bUBfoyIlxTfJJK26Da42M2PPcv4wO0PixfPhjw=s640-c-rw-v1-e365" alt="">
+                        <div>
+                        <p>Apricot Mustard Glazed Ham </p>
+                     <img src="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg" alt="">
+                    </div>
+                        <p>YUMMY</p>
+                    </div>
+
+
+
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/9QQTcGU8wP42IqD66NdOImru1npk-nYXUzFZkqrXgVWtw6xUnjRrJgWBS5kLyvoCRNVb9Z23sHRGIWxmJTxI=s640-c-rw-v1-e365" alt="">
+                        <div>
+                        <p>Pork Milanese with Case e Pepe Spang </p>
+                     <img src="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg" alt="">
+                    </div>
+                       <p>YUMMY</p>
+                    </div>
+
+
+                </div>
+                
+            </div>
+
+                 <div class="top">
+                <h3>Popular Now</h3>
+                <div class="block">
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/c9GH_CQIp0B302sRDlx3gITf-v6LSt9tecNDVDFdK7QIikMocax7bYgf5Xd8XJsEUfUpnn_3CcEXX4wdFFXnRA=s640-c-rw-v1-e365" alt="">
+
+                    <div>
+                        <p>Sheet Pan Honey Mustsatrd Pork Chops </p>
+                     <img src="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg" alt="">
+                    </div>
+                      <p>YUMMY</p>
+                    </div>
+
+
+
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/Ezv_E-DZfsKxrvmBkXopsUy_IMO9AgtjqR1hXYqhezwu26r1ZjXnPycuoSckXn-OwJ9eU5XI91NtIundR_c-KO1Nu9ps_kCR7w=s640-c-rw-v1-e365" alt="">
+                        <div>
+                        <p>Apricot Mustard Glazed Ham </p>
+                     <img src="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg" alt="">
+                    </div>
+                        <p>YUMMY</p>
+                    </div>
+
+
+
+                    <div>
+                        <img src="https://lh6.ggpht.com/htIvKPtGBIoVYXMLlwRiKEPLb9RdEjIqBwpRu4snv8Z008fpSymFkoRFhcwSUcqwLM_MLq7rVJNjV6-250e1_A=s640-c-rw-v1-e365" alt="">
+                        <div>
+                        <p>Pork Milanese with Case e Pepe Spang </p>
+                     <img src="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg" alt="">
+                    </div>
+                        <p>YUMMY</p>
+                    </div>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
