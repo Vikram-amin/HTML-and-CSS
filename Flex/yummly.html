@@ -4,66 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yummly</title>
+    <link rel="icon" href="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg">
+
     <style>
         #container{
+            width: 100%;
+            height: 100vh;
+            margin: -8px;
             background-color: black;
-            margin: -19px -8px;
-          
-            
-           
         }
-        .parent{
-            max-width:60% ;
-            background-color: white;
+
+        #parent{
+            width: 60%;
+            background-color: #FFFFFF;
+            height: 100vh;
             margin: auto;
         }
+
+        .frame{
+            margin: 2px0;
+            width: 100%;
+            height: 50%;
+        }
+
         h3{
             text-align: center;
             margin: 0;
-            margin-top: 20px;
             padding: 10px;
             color: grey;
             font-family: sans-serif;
             font-size: 16px;
         }
+
         .block{
-            display: flex;
-            max-width: 80%;
+            width: 80%;
             margin: auto;
-              
-
-            /* border: 2px solid black; */
-              
-        }
-
-          .block > div > div {
-            max-width: 95%;
             display: flex;
-            justify-content: space-between;   
-             /* border: 2px solid red; */
-             text-align: left;
-       
+            
         }
-
-        .block > div{
-            text-align: center;
-          position: relative;
-        
-        }
-
-        .block > div > img{
+        .block > div > div{
+            display: flex;
             max-width: 95%;
-           /* border: 2px solid red; */
-       
-          
-        }
-
-
-        .block p + img{
-            width: 35px;
-            height: 35px;
-                
+            justify-content: space-around;
         }
 
         .block p{
@@ -72,33 +55,43 @@
             color: gray;
             font-family: sans-serif;
             font-size: 12px;
+            overflow: hidden;
+        }
+
+        .block > div > img{
+            width: 95%;
+        }
+
+        .block p + img{
+            width: 35px;
+            height: 35px;
+            margin-left: 20px;
         }
 
         .block p:last-child{
-            color: red;
             text-align: left;
-      
             font-size: 10px;
             color: #AFAEAE;
-       
-          
         }
-      
+  
+   
+
+
     </style>
+
 </head>
 <body>
-    
-
+ 
     <div id="container">
-        <div class="parent">
-            <div class="top">
+        <div id="parent">
+            <div class="frame">
                 <h3>Weeknight Dinners</h3>
-                <div class="block">
+                <div class="block"> 
                     <div>
                         <img src="https://lh3.googleusercontent.com/6EKa7I3KmEqQe3Ek_s9mddSK96V_sdGqoIE4woxlqQ1yLFQ4Tnb5RkWYiW3BfOXp_Q6y3H-aA5CMlc_6edzu=s640-c-rw-v1-e365" alt="">
 
                     <div>
-                        <p>Sheet Pan Honey Mustsatrd Pork Chops </p>
+                     <p>Sheet Pan Honey Mustsatrd Pork Chops </p>
                      <img src="https://play-lh.googleusercontent.com/u-1_bY3B1iqi02Q_3qlg0UNJMP2NNACnvkvGqAPiWcdSbNNjwfGAv6BW64Rh3k_UNg" alt="">
                     </div>
                     <p>YUMMY</p>
@@ -126,12 +119,11 @@
                        <p>YUMMY</p>
                     </div>
 
-
                 </div>
-                
             </div>
 
-                 <div class="top">
+
+            <div class="frame">
                 <h3>Popular Now</h3>
                 <div class="block">
                     <div>
@@ -171,6 +163,8 @@
                 
             </div>
         </div>
+        
     </div>
+    
 </body>
 </html>
