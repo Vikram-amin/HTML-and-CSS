@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 900px;
+            height: 300px;
+            margin: auto;
+            margin-top: 25vh;
+            background-color: rgb(148, 138, 138);
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+        
+
+        }
+
+        #parent > div{
+            height: 100px;
+            background-color: teal;
+            text-align: left;
+            padding:0px;
+            margin:0px;
+        }
+
+        #parent > div:nth-child(1){
+            width: 100px;
+            background-color: yellowgreen;
+        }
+        #parent > div:nth-child(2){
+            width: 300px;
+            background-color: rgb(132, 93, 204);
+        }
+        #parent > div:nth-child(3){
+            width: 100px;
+            background-color: yellowgreen;
+        }
+        #parent > div:nth-child(4){
+            width: 300px;
+            background-color: rgb(81, 103, 202);
+        }
+        #parent > div:nth-child(5){
+            width: 100px;
+            background-color: yellowgreen;
+        }
+        #parent > div:nth-child(6){
+            width: 100px;
+            background-color: yellowgreen;
+        }
+        #parent > div:nth-child(7){
+            width: 100px;
+            background-color: yellowgreen;
+        }
+        #parent > div:nth-child(8){
+            width: 100px;
+            background-color: yellowgreen;
+        }
+        #parent > div:nth-child(9){
+            width: 300px;
+            background-color: rgb(90, 99, 230);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
